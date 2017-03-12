@@ -8,7 +8,7 @@ usage: command.py [-h HELP] [-k KEYSIZE] [-f FILENAME] [-e ENCRYPT OPTION] [-d D
 
 optional arguments:
   -h, --help  show this help message and exit
-  -k K        Enter a key between 0 and 256
+  -k K        Enter a keyvalue
   -f F        Enter filename that will be encrypted
   -e          Option to encrypt
   -d          Option to decrypt
