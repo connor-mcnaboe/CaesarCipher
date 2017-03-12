@@ -5,18 +5,20 @@ import sys
 
 def main(k, f, e, d):
 	#Declare variables
-	ascii_dict  = ascii()
-	if e == True: 
-		eFile(f, k, ascii_dict) #Encrypt File 
-	elif d ==True:
-		dFile(f, k, ascii_dict)
-		
+	ascii_dict  = ascii() #Check all arguments are filled 
 	if (k  == None) | (f == None): 
 		print("Error: Enter both key and filename")
 		exit()
 	if (e  == None) and (d == None): 
 		print("Error: Enter an option to encrypt or decrypt a file")
-		exit()	
+		exit()
+	if k > 255: 
+		k = k % 255		
+	if e == True: 
+		eFile(f, k, ascii_dict) #Encrypt File 
+	elif d ==True:
+		dFile(f, k, ascii_dict)
+		
 	return 
 
 
