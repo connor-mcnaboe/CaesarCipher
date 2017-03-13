@@ -1,5 +1,5 @@
 import argparse
-from def_cipher import encrypt, decrypt, rtnTxt, ascii, main
+from def_cipher import crypt, rtnTxt, ascii, main
 parser = argparse.ArgumentParser() # Define comamand line args
 parser.add_argument("-k", type=int, help="Enter a keyvalue")
 parser.add_argument("-f", help="Enter filename that will be encrypted") 
